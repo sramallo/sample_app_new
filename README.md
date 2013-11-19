@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 == README
 
 This README would normally document whatever steps are necessary to get the
@@ -30,10 +29,3 @@ Please feel free to use a different markup language if you do not plan to run
 
 # Ruby on Rails Tutorial: sample application new
 
-This is the sample application for
-the [*Ruby on Rails Tutorial*](http://railstutorial.org/)
-by [Michael Hartl](http://michaelhartl.com/).
-=======
-sample_app_new
-==============
->>>>>>> bda2618c26d517f2c2020ae4c42fddb187b1f8c2
