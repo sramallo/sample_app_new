@@ -3,8 +3,12 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(email: params[:session][:email].downcase)
-    if user && user.authenticate(params[:session][:password])
+# This is with form_for
+#    user = User.find_by(email: params[:session][:email].downcase)
+# And this is with form_tag, without :session in params hash
+    user = User.find_by(email: params[:email].downcase)
+#    if user && user.authenticate(params[:session][:password])
+    if user && user.authenticate(params[:password])
       # Sign the user in and redirect to the user's show page.
       sign_in user
       redirect_to user
@@ -19,3 +23,4 @@ class SessionsController < ApplicationController
     redirect_to root_url
   end
 end
+
